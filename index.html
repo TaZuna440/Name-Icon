@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="dev-to-logo-24.png">
+    <title>Name Icon</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #14121d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+        .myName {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .myName > div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 0 15px #4caf50;
+        }
+        .firstName {
+            animation: slideBottom 1s ease forwards;
+        }
+        .secondName {
+            animation: zoomIn 1s ease forwards;
+        }
+        .surName {
+            animation: slideTop 1s ease forwards;
+        }
+        i, svg {
+            font-size: 2rem;
+            color: #4caf50;
+        }
+        @media (max-width: 600px) {
+            .myName > div {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes slideBottom {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideTop {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="myName">
+        <div class="firstName">
+            <i class='bx bxl-internet-explorer'></i>
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" fill="#4caf50">
+                <path d="M15 4v12a4 4 0 0 1-4 4h-3v-2h3a2 2 0 0 0 2-2V4h3a1 1 0 0 1 0 2h-1v10a6 6 0 0 1-6 6h-3v-2h3a4 4 0 0 0 4-4V4h2Z"/>
+            </svg>            
+        </div>
+        <div class="secondName">    
+            <i class='bx bxl-blogger'></i>
+            <i class='bx bxl-opera'></i>
+            <i class='bx bxl-yahoo'></i>
+        </div>
+        <div class="surName">
+            <i class='bx bxl-pinterest-alt'></i>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#4caf50"><path d="M480-280q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-320Z"/></svg>
+            <i class='bx bxl-mastodon'></i>
+            <i class='bx bxl-angular'></i>
+            <i class='bx bxl-sass'></i>
+            <i class='bx bxl-linkedin'></i>
+        </div>
+    </div>
+</body>
+</html>
